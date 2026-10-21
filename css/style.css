@@ -1,1 +1,498 @@
 
+/* =====================================
+   UMKM SHELLA - WEBSITE BASRENG
+   TEMA PINK
+===================================== */
+
+:root {
+    --pink: #e754a6;
+    --pink-dark: #c52d83;
+    --pink-light: #fff0f7;
+    --pink-soft: #ffe0ef;
+    --white: #ffffff;
+    --text: #503746;
+    --muted: #806a77;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* NAVBAR */
+
+.navbar-pink {
+    background: linear-gradient(100deg, #c52d83, #ee79b9);
+    box-shadow: 0 3px 15px #a51c651f;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-navbar {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: white;
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffe0ef;
+}
+
+/* BERANDA */
+
+.hero-section {
+    padding: 85px 0;
+    background: linear-gradient(
+        135deg,
+        #fff0f7,
+        #ffe0ef,
+        #fff9fc
+    );
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.2;
+    color: #63334e;
+}
+
+.hero-title span {
+    display: block;
+    color: var(--pink);
+}
+
+.hero-description {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-top: 20px;
+}
+
+.badge-pink {
+    background: var(--pink-soft);
+    color: var(--pink-dark);
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.price-label {
+    margin: 22px 0 0;
+    color: var(--muted);
+}
+
+.price-text {
+    color: var(--pink-dark);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 470px;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 7px solid white;
+    box-shadow: 0 12px 35px #d6338425;
+}
+
+/* TOMBOL */
+
+.btn-pink {
+    background: var(--pink);
+    color: white;
+    border: 2px solid var(--pink);
+    border-radius: 30px;
+    padding: 11px 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-pink:hover {
+    background: var(--pink-dark);
+    color: white;
+    border-color: var(--pink-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline-pink {
+    color: var(--pink-dark);
+    background: transparent;
+    border: 2px solid var(--pink);
+    border-radius: 30px;
+    padding: 11px 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-outline-pink:hover {
+    background: var(--pink);
+    color: white;
+}
+
+/* KEUNGGULAN */
+
+.advantages-section {
+    background: white;
+}
+
+.advantage-card {
+    height: 100%;
+    padding: 28px 20px;
+    border-radius: 20px;
+    background: #fff8fc;
+    border: 1px solid var(--pink-soft);
+    transition: 0.3s;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #d6338418;
+}
+
+.advantage-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.advantage-card h5 {
+    color: var(--pink-dark);
+    font-weight: bold;
+}
+
+/* JUDUL SECTION */
+
+.section-heading h2,
+.section-title {
+    color: var(--pink-dark);
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.section-heading p {
+    color: var(--muted);
+}
+
+.section-label {
+    display: inline-block;
+    background: var(--pink-soft);
+    color: var(--pink-dark);
+    padding: 6px 15px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* PRODUK */
+
+.product-section {
+    background: var(--pink-light);
+}
+
+.product-card {
+    border: 1px solid #f9d5e8;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px #d6338412;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px #d6338425;
+}
+
+.product-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 25px;
+}
+
+.product-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    background: var(--pink-soft);
+    color: var(--pink-dark);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-title {
+    font-size: 1.4rem;
+    color: var(--pink-dark);
+    font-weight: bold;
+}
+
+.product-description {
+    color: var(--muted);
+    min-height: 55px;
+}
+
+/* TENTANG KAMI */
+
+.about-section {
+    background: white;
+}
+
+.about-section p {
+    color: var(--muted);
+}
+
+.about-logo {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid var(--pink-soft);
+    box-shadow: 0 8px 25px #d6338415;
+}
+
+/* JAM OPERASIONAL */
+
+.hours-section {
+    background: var(--pink-light);
+}
+
+.hours-card {
+    max-width: 620px;
+    background: white;
+    padding: 30px;
+    border-radius: 22px;
+    border: 1px solid var(--pink-soft);
+    box-shadow: 0 8px 25px #d6338412;
+}
+
+.hours-icon {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.hours-card h4 {
+    text-align: center;
+    color: var(--pink-dark);
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--pink-soft);
+}
+
+.hours-row strong {
+    text-align: right;
+    color: var(--pink-dark);
+}
+
+.hours-note {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 18px 0 0;
+}
+
+/* KONTAK */
+
+.contact-section {
+    background: white;
+}
+
+.contact-card {
+    max-width: 650px;
+    padding: 30px;
+    background: var(--pink-light);
+    border: 1px solid var(--pink-soft);
+    border-radius: 22px;
+    box-shadow: 0 8px 25px #d6338412;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f5d7e7;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-item h5 {
+    color: var(--pink-dark);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+}
+
+.contact-item a {
+    color: var(--pink-dark);
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+.footer-pink {
+    background: linear-gradient(100deg, #c52d83, #e754a6);
+    color: white;
+}
+
+.footer-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    background: white;
+}
+
+/* TOMBOL WHATSAPP MENGAMBANG */
+
+.floating-whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 18px #00000025;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+.floating-whatsapp:hover {
+    color: white;
+    transform: scale(1.08);
+}
+
+/* RESPONSIVE HP */
+
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.35rem;
+    }
+
+    .hero-image {
+        height: 290px;
+        margin-top: 15px;
+    }
+
+    .hero-section .d-flex {
+        justify-content: center;
+    }
+
+    .product-image {
+        height: 240px;
+    }
+
+    .about-logo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hours-card,
+    .contact-card {
+        padding: 22px 17px;
+    }
+
+    .hours-row {
+        font-size: 0.88rem;
+    }
+
+    .floating-whatsapp {
+        right: 14px;
+        bottom: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .btn-pink,
+    .btn-outline-pink {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .hours-row {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .hours-row strong {
+        text-align: left;
+    }
+}
